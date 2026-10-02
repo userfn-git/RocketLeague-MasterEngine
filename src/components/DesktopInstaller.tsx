@@ -647,7 +647,7 @@ $btnOpenSim.FlatStyle = "Flat"
 $btnOpenSim.Location = New-Object System.Drawing.Point(580, 555)
 $btnOpenSim.Size = New-Object System.Drawing.Size(270, 36)
 $btnOpenSim.Add_Click({
-    $appUrl = "https://ais-dev-7xgtk3pserxiaohmdbn4eh-174192677837.europe-west1.run.app"
+    $appUrl = "${typeof window !== 'undefined' ? window.location.origin : 'https://ais-dev-66xlg3jfu5vx3btyqeff34-174192677837.europe-west1.run.app'}"
     Start-Process "msedge.exe" "--app=$appUrl"
 })
 $form.Controls.Add($btnOpenSim)
